@@ -6,12 +6,22 @@ const MainCategory = (props) => {
     <div className="categories">
       <div className="MainCategory">
         {props.mc.map((prop) => (
-          <CategoryCard key={prop.id} cat={prop.cat} pic = {prop.pic}/>
+          <CategoryCard
+            key={prop.id}
+            cat={prop.cat}
+            pic={prop.pic}
+            linkTo={prop.linkTo}
+          />
         ))}
       </div>
-      <div className="ProductCategory"> 
+      <div className="ProductCategory">
         {props.pc.map((prop) => (
-          <CategoryCard key={prop.id} cat={prop.cat} pic = {prop.pic}/>
+          <CategoryCard
+            key={prop.id}
+            cat={prop.cat}
+            pic={prop.pic}
+            linkTo={prop.linkTo}
+          />
         ))}
       </div>
     </div>

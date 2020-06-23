@@ -1,44 +1,47 @@
-.benefits{
-    margin:2rem;
+.benefits {
+    margin: 2rem;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 3rem;
 }
 
-.benCard{
-    padding:2rem;
-    color:white; 
+.benCard {
+    padding: 2rem;
+    color: white;
     text-align: center;
-    font-family: monospace;
-    font-family: 'Roboto', sans-serif;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
-    &--main{
+    &--main {
         font-size: 2rem;
         font-weight: 700;
         letter-spacing: .2rem;
-        margin:1rem;
+        margin: 1rem;
         text-transform: uppercase;
     }
 
-    &--tag{
+    &--tag {
         font-size: 1.4rem;
         font-weight: 300;
         text-transform: capitalize;
-        margin:1rem;
+        margin: 1rem;
         letter-spacing: .2rem;
     }
 
-    &--btn{
-        border:none;
-        padding:1rem;
+    &--btn {
+        border: none;
+        padding: 1rem;
         font-size: 1.5rem;
         font-weight: 700;
         border-radius: 10rem;
-        margin:1rem;
+        margin: 1rem;
+    }
+
+    &:hover {
+        transform: translateY(.1rem);
+        box-shadow: 0rem .3rem 1rem black;
     }
 }

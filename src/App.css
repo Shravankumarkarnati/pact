@@ -1,14 +1,15 @@
-
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: inherit;
 }
 
-html{
+html {
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
-  background-color: #ccc;
   background-color: #fff;
+}
+
+body {
+  /* font-family: "Cooper-Hewitt"; */
 }

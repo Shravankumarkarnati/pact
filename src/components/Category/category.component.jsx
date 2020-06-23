@@ -19,18 +19,28 @@ class Category extends React.Component {
     this.state = {
       Categories: {
         MainCategories: [
-          { id: 1, cat: "Mens", pic: men },
-          { id: 2, cat: "Womens", pic: women },
-          { id: 3, cat: "kids", pic: kids },
-          { id: 4, cat: "Unisex", pic: unisex },
+          { id: 1, cat: "Mens", pic: men, linkTo: "mens" },
+          { id: 2, cat: "Womens", pic: women, linkTo: "womens" },
+          { id: 3, cat: "kids", pic: kids, linkTo: "kids" },
+          { id: 4, cat: "Unisex", pic: unisex, linkTo: "unisex" },
         ],
 
         ProductCategories: [
-          { id: 1, cat: "Fashion,Clothing and Accessories", pic: fashion },
-          { id: 3, cat: "Toys and Baby Equipment", pic: toys },
-          { id: 4, cat: "Books,CD's and physical media", pic: books },
-          { id: 5, cat: "Technology", pic: tech },
-          { id: 2, cat: "Health and Beauty", pic: health },
+          {
+            id: 1,
+            cat: "Fashion,Clothing and Accessories",
+            pic: fashion,
+            linkTo: "fashion",
+          },
+          { id: 3, cat: "Toys and Baby Equipment", pic: toys, linkTo: "toys" },
+          {
+            id: 4,
+            cat: "Books,CD's and physical media",
+            pic: books,
+            linkTo: "books",
+          },
+          { id: 5, cat: "Technology", pic: tech, linkTo: "tech" },
+          { id: 2, cat: "Health and Beauty", pic: health, linkTo: "health" },
         ],
       },
     };
