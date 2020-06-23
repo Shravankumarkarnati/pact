@@ -31,8 +31,10 @@
         left:50%;
         top:50%;
         transform: translate(-50%,-50%);
-        border:.2rem solid black;
         padding:2.5rem;
+        background-color: rgba(white,.8);
+        color:black;
+        border:none;
     }
     &:hover{
         transform:scale(1.1) ;
@@ -58,7 +60,9 @@
         
         &--text{
             font-size: 2rem;
-            border:.1rem solid black;
+            background-color: rgba(white,.8);
+            color:black;
+            border:none;
             padding:1.5rem;
         }
     }

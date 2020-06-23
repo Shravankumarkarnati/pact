@@ -9,7 +9,7 @@ const MainCategory = (props) => {
           <CategoryCard key={prop.id} cat={prop.cat} pic = {prop.pic}/>
         ))}
       </div>
-      <div className="ProductCategory">
+      <div className="ProductCategory"> 
         {props.pc.map((prop) => (
           <CategoryCard key={prop.id} cat={prop.cat} pic = {prop.pic}/>
         ))}

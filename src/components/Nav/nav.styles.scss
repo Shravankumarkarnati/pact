@@ -3,9 +3,8 @@
 }
 
 .header{
-    height:90vh;
+    padding:3vh 0;
     background-color: #eee;
-    // background-color: black;
     display: flex;
     flex-direction: column;
     &--nav{
@@ -87,5 +86,5 @@
 
 .background{
     background-color:#ede;
-    height: 100%;
+    height: 55vh;
 }

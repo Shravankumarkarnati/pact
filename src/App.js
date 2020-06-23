@@ -1,15 +1,28 @@
-import React from 'react';
-import './App.css';
-import Header from "./components/Header/header.component";
-import Benefits from "./components/Benefits/benefits.components";
-import Main  from "./components/Main/main.component";
+import React from "react";
+import "./App.css";
+
+import homepage from "./pages/homepage/homepage.pages";
+
+import Nav from "./components/Nav/nav.component";
+import Footer from "./components/Footer/footer.component";
+
+import { Link, Route, Switch, Router } from "react-router-dom";
+
+function Bags() {
+  return (
+    <div>
+      <h1>Bags</h1>
+    </div>
+  );
+}
 
 function App() {
   return (
     <div className="App">
-        <Header/>  
-        <Benefits />
-        <Main/>    
+      <Nav />
+      <Route exact path="/" component={homepage} />
+      <Route path="/bags" component={Bags} />
+      <Footer />
     </div>
   );
 }
