@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 3rem;
+    font-family: 'Exo', sans-serif;
 }
 
 .benCard {
@@ -25,7 +26,8 @@
 
     &--tag {
         font-size: 1.4rem;
-        font-weight: 300;
+        font-weight: 400;
+        font-style: italic;
         text-transform: capitalize;
         margin: 1rem;
         letter-spacing: .2rem;

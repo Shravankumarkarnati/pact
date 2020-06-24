@@ -1,0 +1,126 @@
+.app {
+    position: relative;
+}
+
+.header {
+    padding: 3vh 0;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to left top, rgb(248, 172, 172), rgb(233, 166, 122));
+
+
+    &--nav {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-left {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        &-right {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    }
+
+    &-logo {
+        position: absolute;
+        top: 1rem;
+        left: -2rem;
+        height: 10rem;
+        transform: rotate(270deg);
+    }
+
+    &-name {
+        clip-path: polygon(13% 0%, 100% 0%, 87% 100%, 0% 100%);
+        font-size: 5rem;
+        background-color: black;
+        color: white;
+        padding: 1rem 3rem;
+        letter-spacing: .3rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-style: italic;
+        font-family: 'Arvo', serif;
+    }
+
+    &--icon {
+        text-decoration: none;
+        position: relative;
+
+        & img {
+            height: 3rem;
+        }
+
+        & span {
+            position: absolute;
+            top: -3.2rem;
+            right: -1rem;
+            color: white;
+            background-color: salmon;
+            font-size: 1.2rem;
+            padding: .5rem;
+            border-radius: 50%;
+            text-transform: none;
+        }
+    }
+
+    &--iconList {
+        margin: 0 3rem;
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+
+        &-item {
+            margin: 0 1rem;
+        }
+    }
+}
+
+.background {
+    background-color: #ede;
+    height: 55vh;
+}
+
+.options {
+    align-self: flex-end;
+    margin-right: 20%;
+    margin-top: 3rem;
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+
+    & a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: black;
+        font-family: 'Arvo', serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        background-color: rgb(248, 168, 137);
+        padding: 1rem;
+        border-radius: .2rem;
+        border: none;
+
+        &:hover,
+        &:active {
+            background-color: black;
+            color: white;
+            outline: none;
+            border: none;
+        }
+    }
+}

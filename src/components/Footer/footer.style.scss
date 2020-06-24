@@ -1,57 +1,56 @@
-.footer{
+.footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(201, 201, 235);
+    background-image: linear-gradient(to right bottom, rgb(248, 172, 172), rgb(233, 166, 122));
 
-    &-logo{
+    &-logo {
         height: 10vh;
         padding-right: 3rem;
         border-right: 1px solid black;
     }
 
-    & > *{
+    &>* {
         width: 50%;
     }
 }
 
-.FooterLeft{
+.FooterLeft {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.3rem;
-    font-family: monospace;
-    font-weight: 400;
-    & *{
-        margin:2rem;
+    font-size: 1rem;
+    font-weight: 600;
+
+    & * {
+        margin: 2rem;
     }
 }
 
-.FooterRight{
+.FooterRight {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.elements-list{
+.elements-list {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    font-size: 2rem;
-    font-family: monospace;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.element{
-    background-color: wheat;
-    margin-right:3rem;
+.element {
+    background-color: rgb(237, 245, 90);
+    margin-right: 3rem;
     padding: .3rem 1.5rem;
     border-radius: .3rem;
     transition: all .3s;
 
-    &:hover{
+    &:hover {
         transform: rotate(10deg) scale(1.1);
         cursor: pointer;
 
