@@ -1,0 +1,46 @@
+.signinuppage {
+    background: rgba(224, 202, 202, 0.747);
+    background-image: linear-gradient(to bottom left,
+            rgba(141, 102, 102, 0.747),
+            rgba(243, 198, 198, 0.747));
+    min-height: 80vh;
+    padding: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    &>div {
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+.signIn {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-heading {
+        font-size: 3rem;
+        font-weight: 700;
+        word-spacing: .3rem;
+        font-family: 'Arvo', serif;
+        text-transform: capitalize;
+        margin: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &-para {
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: 'Arvo', serif;
+        text-transform: capitalize;
+        margin: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 10rem;
+    }
+}
+
+.signUp {}
