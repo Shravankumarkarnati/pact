@@ -50,6 +50,7 @@
     &-image {
         height: 100%;
         width: 70%;
+        transition: all .5s;
     }
 
     &-details {
@@ -60,6 +61,7 @@
         justify-content: space-between;
         flex-direction: column;
         font-family: "Exo", Sans-serif;
+        transition: all .5s;
     }
 
     &-name {

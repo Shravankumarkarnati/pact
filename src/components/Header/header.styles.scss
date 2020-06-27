@@ -103,7 +103,8 @@
     align-items: center;
     justify-content: space-between;
 
-    & a {
+    & a,
+    .userStatus {
         text-decoration: none;
         font-size: 2rem;
         color: black;
@@ -114,6 +115,7 @@
         padding: 1rem;
         border-radius: .2rem;
         border: none;
+        cursor: pointer;
 
         &:hover,
         &:active {

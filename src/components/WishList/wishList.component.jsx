@@ -5,7 +5,8 @@ import search from "../../images/icons/search.svg";
 import cart from "../../images/icons/supermarket.svg";
 import user from "../../images/icons/user.svg";
 import Options from "../Options/options.component";
-const WishList = () => {
+
+const WishList = (currentUser) => {
   return (
     <div className="header--nav-right">
       <div>
@@ -43,7 +44,7 @@ const WishList = () => {
           </li>
         </ul>
       </div>
-      <Options />
+      <Options currentUser={currentUser} />
     </div>
   );
 };

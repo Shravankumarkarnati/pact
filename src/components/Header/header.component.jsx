@@ -3,12 +3,12 @@ import IconName from "../IconName/iconName.component";
 import WishList from "../WishList/wishList.component";
 import "./header.styles.scss";
 
-const Nav = () => {
+const Nav = ({ currentUser }) => {
   return (
     <div className="header">
       <div className="header--nav">
         <IconName />
-        <WishList />
+        <WishList currentUser={currentUser} />
       </div>
     </div>
   );

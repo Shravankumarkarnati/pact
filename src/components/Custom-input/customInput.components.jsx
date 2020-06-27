@@ -7,7 +7,7 @@ const CustomInput = ({ label, handle, name, ...otherProps }) => {
     <div className="customInput">
       <input
         name={name}
-        placeholder={name}
+        placeholder={label}
         className="customInput-input"
         onChange={handle}
         {...otherProps}
