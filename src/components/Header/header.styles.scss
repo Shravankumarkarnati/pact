@@ -72,6 +72,8 @@
             border-radius: 50%;
             text-transform: none;
         }
+
+        &-cart {}
     }
 
     &--iconList {
@@ -125,4 +127,49 @@
             border: none;
         }
     }
+}
+
+
+.cart-dropdown {
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    background-color: white;
+    transform: translateX(-50%);
+    text-align: center;
+    overflow-y: scroll;
+    visibility: hidden;
+    z-index: 100;
+
+    &::-webkit-scrollbar {
+        width: .3rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: black;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: white;
+    }
+
+    &>p {
+        font-size: 2rem;
+        padding: 1rem 0;
+        color: white;
+        border-bottom: .2rem solid black;
+        background-color: black;
+    }
+
+    &:hover {
+        visibility: visible;
+    }
+}
+
+.cart-icon:hover+.cart-dropdown {
+    visibility: visible;
 }

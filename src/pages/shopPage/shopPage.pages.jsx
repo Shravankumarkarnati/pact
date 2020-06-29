@@ -24,14 +24,7 @@ class Homepage extends React.Component {
               {data.items
                 .filter((item, count) => count < 3)
                 .map((it) => {
-                  return (
-                    <ShopItem
-                      key={it.id}
-                      name={it.name}
-                      image={it.imageUrl}
-                      price={it.price}
-                    />
-                  );
+                  return <ShopItem key={it.id} item={it} />;
                 })}
             </div>
           </div>

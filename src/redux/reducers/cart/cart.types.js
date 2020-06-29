@@ -1,0 +1,8 @@
+const cartActionTypes = {
+  ADD_ITEM: "ADD_ITEM",
+  REMOVE_ITEM_FROM_CHECKOUT: "REMOVE_ITEM_FROM_CHECKOUT",
+  DEC_ITEM_QUANTITY: "DEC_ITEM_QUANTITY",
+  INC_ITEM_QUANTITY: "INC_ITEM_QUANTITY",
+};
+
+export default cartActionTypes;

@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 
 import { auth } from "../../firebase/firebase.config";
 
+import { connect } from "react-redux";
+
+import { createStructuredSelector } from "reselect";
+import { selectCurrentUser } from "../../redux/reducers/user/user.selectors";
+
 const Options = ({ currentUser }) => {
   const optionList = [
     { name: "Home", link: "/" },
@@ -14,7 +19,7 @@ const Options = ({ currentUser }) => {
     </div>
   ));
   const UserStatus =
-    currentUser.currentUser !== null ? (
+    currentUser !== null ? (
       <div className="userStatus" onClick={() => auth.signOut()}>
         SignOut
       </div>
@@ -32,4 +37,8 @@ const Options = ({ currentUser }) => {
   );
 };
 
-export default Options;
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
+
+export default connect(mapStateToProps)(Options);
