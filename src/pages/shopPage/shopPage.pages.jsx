@@ -1,37 +1,16 @@
 import React from "react";
 import "./shopPage.styles.scss";
-import SHOP_DATA from "../../shop_data";
-import ShopItem from "../../components/shopItem/shopItem.component";
+import ShopOverview from "../../components/shopOverview/shop-overview.component";
+import ShopCollection from "../shopCollectionPage/shopCollection.page";
+import { Route } from "react-router-dom";
 
-class Homepage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { shopData: [] };
-  }
-
-  componentDidMount() {
-    this.setState({ shopData: SHOP_DATA });
-  }
-
-  render() {
-    const sData = this.state.shopData;
-    return (
-      <div className="shop-container">
-        {sData.map((data) => (
-          <div key={data.id} className="shop-category">
-            <h1 className="shop-category-title">{data.title}</h1>
-            <div className="shop-category-items">
-              {data.items
-                .filter((item, count) => count < 3)
-                .map((it) => {
-                  return <ShopItem key={it.id} item={it} />;
-                })}
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  }
-}
+const Homepage = ({ match }) => {
+  return (
+    <div className="shopPage">
+      <Route exact path={`${match.path}`} component={ShopOverview} />
+      <Route path={`${match.path}/:collectionId`} component={ShopCollection} />
+    </div>
+  );
+};
 
 export default Homepage;

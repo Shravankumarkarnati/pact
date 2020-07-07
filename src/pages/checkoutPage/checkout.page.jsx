@@ -14,6 +14,8 @@ import {
   decItemQuantity,
 } from "../../redux/reducers/cart/cart.action";
 
+import StripeBtn from "../../components/Stripe/stripePayBtn.component";
+
 function CheckOutHeader() {
   return (
     <div className="checkout-header">
@@ -100,17 +102,27 @@ const CheckOut = ({
   return (
     <div className="checkout">
       <CheckOutHeader />
-      {cartItems.map((item) => (
-        <CheckOutTableItem
-          key={item.id}
-          item={item}
-          removeItem={removeItem}
-          incQuantity={incQuantity}
-          decQuantity={decQuantity}
-        />
-      ))}
+      {cartItems.length ? (
+        cartItems.map((item) => (
+          <CheckOutTableItem
+            key={item.id}
+            item={item}
+            removeItem={removeItem}
+            incQuantity={incQuantity}
+            decQuantity={decQuantity}
+          />
+        ))
+      ) : (
+        <h2 className="cart-empty">Your cart is Empty.</h2>
+      )}
 
       <CheckOutFooter price={totalPrice} />
+      <p className="card-test">
+        {" "}
+        --- Testing --- <br />
+        Use card No:4242424242424242 Exp Date and CV can be anything.
+      </p>
+      <StripeBtn price={totalPrice} />
     </div>
   );
 };

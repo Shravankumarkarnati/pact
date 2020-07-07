@@ -1,0 +1,12 @@
+.shop-collection {
+    margin: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+
+    & .shop-item {
+        width: 33vw;
+        height: 50vh;
+    }
+
+}

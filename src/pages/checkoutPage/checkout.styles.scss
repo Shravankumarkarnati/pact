@@ -1,5 +1,6 @@
 .checkout {
     padding: 10vh 10vw;
+    min-height: 100vh;
 
     &-header,
     &-footer,
@@ -57,4 +58,23 @@
             }
         }
     }
+}
+
+.cart-empty {
+    font-size: 4rem;
+    text-align: center;
+    padding: 4rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    word-spacing: 1rem;
+}
+
+.stripeBtn,
+.card-test {
+    float: right;
+    margin: 4rem;
+}
+
+.card-test {
+    float: left;
 }

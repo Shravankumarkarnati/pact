@@ -1,6 +1,5 @@
 import cartActionTypes from "./cart.types";
 import { organizeCart, incQuantityItem, decQuantityItem } from "./cart.utils";
-import { act } from "react-dom/test-utils";
 
 const INITIAL_STATE = {
   cartItems: [],
